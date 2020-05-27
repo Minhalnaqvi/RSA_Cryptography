@@ -17,7 +17,7 @@ from math import *
             impossible in this era.
 
 '''
-# Step 1
+
 
 def prime_check(var):
     count=0
@@ -105,4 +105,4 @@ else:
 
 
 
-#
+
