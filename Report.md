@@ -1,25 +1,23 @@
 # DM 103347: RSA Cryptography System
 ## PROJECT MEMBERS
 ------------ | -------------
-**12345** | **Minhal Hussain** <!--this is the group leader in bold-->
+**12345** | **Minhal Hussain**
 63802   | Minhal Hussain
 64091   | Hassaan Raheem 
 
-<!--group member names and ids-->
+
 ## Project Description ##
 The idea of RSA is based on the fact that it is difficult to factorize a large integer. The public key consists of two numbers where one number is multiplication of two large prime numbers. And private key is also derived from the same two prime numbers. So if somebody can factorize the large number, the private key is compromised. Therefore encryption strength totally lies on the key size and if we double or triple the key size, the strength of encryption increases exponentially. RSA keys can be typically 1024 or 2048 bits long, but experts believe that 1024 bit keys could be broken in the near future. But till now it seems to be an infeasible task. 
 
 
 ## Discrete Math Concepts Used ##
-Number Theory :
-        1) GCD using Euclid Algorithm
-        2) Prime Factorization
-        3) Modular Inverse
-        4) Encryption / Decryption Using Chinese Remainder Theorem
+-Number Theory :
+        - GCD using Euclid Algorithm
+        - Prime Factorization
+        - Modular Inverse
+        - Encryption / Decryption Using Chinese Remainder Theorem
 
-###Example 1: RSA Cryptography Code###
-'''
-
+###Example 1: RSA Cryptography Code
 '''
     RSA Cryptography System
         Steps :
@@ -37,7 +35,6 @@ Number Theory :
             If p and q are very large prime numbers then probability of breaking the message is 
             impossible in this era.
 
-'''
 
 def prime_check(var):
     count=0
@@ -130,12 +127,12 @@ press=input()
 
 ```
 
-##Problems Faced##
-Writing Modulo Inverse Function 
+##Problems Faced
+- Writing Modulo Inverse Function 
 
 
-##References##
+##References
 - Understanding RSA Crypto : 
-    -1) [RSA Video 1](https://youtu.be/RH6hlnR6Qsk)
-    -2) [RSA Video 2](https://youtu.be/_9Nuj6tfUzI)
-    -3) [Enigma Machine](https://youtu.be/ASfAPOiq_eQ)
+    -[RSA Video 1](https://youtu.be/RH6hlnR6Qsk)
+    -[RSA Video 2](https://youtu.be/_9Nuj6tfUzI)
+    -[Enigma Machine](https://youtu.be/ASfAPOiq_eQ)
