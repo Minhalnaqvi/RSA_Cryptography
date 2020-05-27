@@ -1,5 +1,5 @@
 #                        DM 103347: RSA Cryptography System
-___
+
 ## PROJECT LEADER
 * **12345** | **Minhal Hussain**
 
@@ -8,7 +8,6 @@ ___
 |-------|----------------|
 | 63802 | Minhal Hussain |
 | 64091 | Hassaan Raheem |
-___
 
 ## Project Description 
 '''
@@ -23,9 +22,7 @@ ____
         1. Encryption / Decryption Using Chinese Remainder Theorem
 ___
 ### Example 1: RSA Cryptography Code
-'''python
-    """
-    RSA Cryptography System
+    '''RSA Cryptography System
         Steps :
             1) take input two variables p and q as prime
             2) apply touation formula to find total prime factors of p*q
@@ -39,9 +36,7 @@ ___
             10) Apply decryption ---> to get message
         Note :
             If p and q are very large prime numbers then probability of breaking the message is 
-            impossible in this era.
-    """
-
+            impossible in this era.'''
 def prime_check(var):
     count=0
     for i in range(2,int(sqrt(var))+1):
