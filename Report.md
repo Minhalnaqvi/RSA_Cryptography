@@ -13,7 +13,7 @@
 '''
 The idea of RSA is based on the fact that it is difficult to factorize a large integer. The public key consists of two numbers where one number is multiplication of two large prime numbers. And private key is also derived from the same two prime numbers. So if somebody can factorize the large number, the private key is compromised. Therefore encryption strength totally lies on the key size and if we double or triple the key size, the strength of encryption increases exponentially. RSA keys can be typically 1024 or 2048 bits long, but experts believe that 1024 bit keys could be broken in the near future. But till now it seems to be an infeasible task. 
 '''
-____
+
 ## Discrete Math Concepts Used
 * Number Theory :
         1. GCD using Euclid Algorithm
@@ -22,7 +22,7 @@ ____
         1. Encryption / Decryption Using Chinese Remainder Theorem
 ___
 ### Example 1: RSA Cryptography Code
-    '''RSA Cryptography System
+    ''' RSA Cryptography System
         Steps :
             1) take input two variables p and q as prime
             2) apply touation formula to find total prime factors of p*q
@@ -36,7 +36,9 @@ ___
             10) Apply decryption ---> to get message
         Note :
             If p and q are very large prime numbers then probability of breaking the message is 
-            impossible in this era.'''
+            impossible in this era.
+            '''
+'''python
 def prime_check(var):
     count=0
     for i in range(2,int(sqrt(var))+1):
@@ -73,7 +75,7 @@ def rsa_encryption(s,e,n):
         c = (i**e)%n
         store_message_values.append(c)
     return store_message_values
-    
+ 
 def rsa_decryptrion(encryptkey , prvt_key , n ):
     decrypt_message=""
     for temp in encryptkey:
@@ -120,7 +122,6 @@ else:
 
 print("Press Key To Terminate The Program : ",end='')
 press=input()
-
 '''
 
 ## Problems Faced
