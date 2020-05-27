@@ -1,6 +1,5 @@
 #DM 103347: RSA Cryptography System#
-###PROJECT MEMBERS###
-StdID | Name
+##PROJECT MEMBERS###
 ------------ | -------------
 **12345** | **Minhal Hussain** <!--this is the group leader in bold-->
 63802   | Minhal Hussain
@@ -137,6 +136,6 @@ Writing Modulo Inverse Function
 
 ##References##
 - Understanding RSA Crypto : 
-    1) RSA 1 : https://youtu.be/RH6hlnR6Qsk
-    2) RSA 2 : https://youtu.be/_9Nuj6tfUzI
-    3) Enigma Machine : https://youtu.be/ASfAPOiq_eQ
+    -1) [RSA Video 1](https://youtu.be/RH6hlnR6Qsk)
+    -2) [RSA Video 2](https://youtu.be/_9Nuj6tfUzI)
+    -3) [Enigma Machine](https://youtu.be/ASfAPOiq_eQ)
