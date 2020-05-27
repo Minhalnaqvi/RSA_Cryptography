@@ -22,8 +22,10 @@ The idea of RSA is based on the fact that it is difficult to factorize a large i
         1. Encryption / Decryption Using Chinese Remainder Theorem
 
 ### Example 1: RSA Cryptography Code
-    ''' RSA Cryptography System
-        Steps :
+    '''python
+        '''
+        RSA Cryptography System
+          Steps :
             1) take input two variables p and q as prime
             2) apply touation formula to find total prime factors of p*q
             3) display all possible public exponent 
@@ -39,7 +41,7 @@ The idea of RSA is based on the fact that it is difficult to factorize a large i
             impossible in this era.
             '''
         
-        '''python
+        
         def prime_check(var):
                 count=0
                 for i in range(2,int(sqrt(var))+1):
