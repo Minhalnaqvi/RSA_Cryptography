@@ -1,24 +1,30 @@
-# DM 103347: RSA Cryptography System
-## PROJECT MEMBERS
------------- | -------------
-**12345** | **Minhal Hussain**
-63802   | Minhal Hussain
-64091   | Hassaan Raheem 
+#                        DM 103347: RSA Cryptography System
+___
+## PROJECT LEADER
+* **12345** | **Minhal Hussain**
 
+## PROJECT MEMBERS        
+|  ID   |      NAME      |
+|-------|----------------|
+| 63802 | Minhal Hussain |
+| 64091 | Hassaan Raheem |
+___
 
-## Project Description ##
-The idea of RSA is based on the fact that it is difficult to factorize a large integer. The public key consists of two numbers where one number is multiplication of two large prime numbers. And private key is also derived from the same two prime numbers. So if somebody can factorize the large number, the private key is compromised. Therefore encryption strength totally lies on the key size and if we double or triple the key size, the strength of encryption increases exponentially. RSA keys can be typically 1024 or 2048 bits long, but experts believe that 1024 bit keys could be broken in the near future. But till now it seems to be an infeasible task. 
-
-
-## Discrete Math Concepts Used ##
--Number Theory :
-        - GCD using Euclid Algorithm
-        - Prime Factorization
-        - Modular Inverse
-        - Encryption / Decryption Using Chinese Remainder Theorem
-
-###Example 1: RSA Cryptography Code
+## Project Description 
 '''
+The idea of RSA is based on the fact that it is difficult to factorize a large integer. The public key consists of two numbers where one number is multiplication of two large prime numbers. And private key is also derived from the same two prime numbers. So if somebody can factorize the large number, the private key is compromised. Therefore encryption strength totally lies on the key size and if we double or triple the key size, the strength of encryption increases exponentially. RSA keys can be typically 1024 or 2048 bits long, but experts believe that 1024 bit keys could be broken in the near future. But till now it seems to be an infeasible task. 
+'''
+____
+## Discrete Math Concepts Used
+* Number Theory :
+        1. GCD using Euclid Algorithm
+        1. Prime Factorization
+        1. Modular Inverse
+        1. Encryption / Decryption Using Chinese Remainder Theorem
+___
+### Example 1: RSA Cryptography Code
+'''python
+    """
     RSA Cryptography System
         Steps :
             1) take input two variables p and q as prime
@@ -34,7 +40,7 @@ The idea of RSA is based on the fact that it is difficult to factorize a large i
         Note :
             If p and q are very large prime numbers then probability of breaking the message is 
             impossible in this era.
-
+    """
 
 def prime_check(var):
     count=0
@@ -72,8 +78,6 @@ def rsa_encryption(s,e,n):
         c = (i**e)%n
         store_message_values.append(c)
     return store_message_values
-
-
     
 def rsa_decryptrion(encryptkey , prvt_key , n ):
     decrypt_message=""
@@ -81,7 +85,6 @@ def rsa_decryptrion(encryptkey , prvt_key , n ):
         m = (temp**prvt_key)%n
         decrypt_message += chr(m)
     return decrypt_message
-
 
 print("------------------RSA CRYPTOGRAPHY SYSTEM------------------")
 p = int(input("Enter Prime Number 1  : "))
@@ -123,16 +126,14 @@ else:
 print("Press Key To Terminate The Program : ",end='')
 press=input()
 
+'''
+
+## Problems Faced
+* Writing Modulo Inverse Function 
 
 
-```
-
-##Problems Faced
-- Writing Modulo Inverse Function 
-
-
-##References
-- Understanding RSA Crypto : 
-    -[RSA Video 1](https://youtu.be/RH6hlnR6Qsk)
-    -[RSA Video 2](https://youtu.be/_9Nuj6tfUzI)
-    -[Enigma Machine](https://youtu.be/ASfAPOiq_eQ)
+## References
+* Understanding RSA Crypto : 
+    1. [RSA Video 1](https://youtu.be/RH6hlnR6Qsk)
+    1. [RSA Video 2](https://youtu.be/_9Nuj6tfUzI)
+    1. [Enigma Machine](https://youtu.be/ASfAPOiq_eQ)
