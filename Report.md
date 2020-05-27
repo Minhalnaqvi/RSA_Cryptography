@@ -1,5 +1,5 @@
-#DM 103347: RSA Cryptography System#
-##PROJECT MEMBERS###
+# DM 103347: RSA Cryptography System
+## PROJECT MEMBERS
 ------------ | -------------
 **12345** | **Minhal Hussain** <!--this is the group leader in bold-->
 63802   | Minhal Hussain
