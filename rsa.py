@@ -1,4 +1,4 @@
-from math import *
+
 '''
     RSA Cryptography System
         Steps :
